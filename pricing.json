@@ -1,0 +1,17 @@
+[
+  {"flightId":"LY001","economy":420,"business":1850,"first":4200,"seatsAvailEco":19,"seatsAvailBiz":4,"seatsAvailFirst":1,"revenueForecast":187400},
+  {"flightId":"LY028","economy":380,"business":1650,"first":null,"seatsAvailEco":38,"seatsAvailBiz":12,"seatsAvailFirst":null,"revenueForecast":198600},
+  {"flightId":"LY315","economy":290,"business":1200,"first":null,"seatsAvailEco":5,"seatsAvailBiz":2,"seatsAvailFirst":null,"revenueForecast":89400},
+  {"flightId":"LY086","economy":440,"business":1900,"first":4400,"seatsAvailEco":25,"seatsAvailBiz":6,"seatsAvailFirst":2,"revenueForecast":192000},
+  {"flightId":"LY394","economy":260,"business":1100,"first":null,"seatsAvailEco":19,"seatsAvailBiz":5,"seatsAvailFirst":null,"revenueForecast":72400},
+  {"flightId":"LY007","economy":580,"business":2400,"first":5200,"seatsAvailEco":8,"seatsAvailBiz":2,"seatsAvailFirst":0,"revenueForecast":248600},
+  {"flightId":"LY052","economy":310,"business":1300,"first":null,"seatsAvailEco":7,"seatsAvailBiz":1,"seatsAvailFirst":null,"revenueForecast":95200},
+  {"flightId":"LY381","economy":180,"business":750,"first":null,"seatsAvailEco":10,"seatsAvailBiz":3,"seatsAvailFirst":null,"revenueForecast":52400},
+  {"flightId":"LY015","economy":460,"business":1950,"first":4600,"seatsAvailEco":52,"seatsAvailBiz":16,"seatsAvailFirst":4,"revenueForecast":182000},
+  {"flightId":"LY335","economy":270,"business":1150,"first":null,"seatsAvailEco":14,"seatsAvailBiz":4,"seatsAvailFirst":null,"revenueForecast":76800},
+  {"flightId":"LY563","economy":280,"business":1180,"first":null,"seatsAvailEco":21,"seatsAvailBiz":5,"seatsAvailFirst":null,"revenueForecast":74200},
+  {"flightId":"LY071","economy":510,"business":2150,"first":4800,"seatsAvailEco":38,"seatsAvailBiz":14,"seatsAvailFirst":4,"revenueForecast":228400},
+  {"flightId":"LY212","economy":640,"business":2800,"first":6200,"seatsAvailEco":18,"seatsAvailBiz":3,"seatsAvailFirst":1,"revenueForecast":256800},
+  {"flightId":"LY418","economy":220,"business":920,"first":null,"seatsAvailEco":9,"seatsAvailBiz":2,"seatsAvailFirst":null,"revenueForecast":62400},
+  {"flightId":"LY297","economy":290,"business":1240,"first":null,"seatsAvailEco":4,"seatsAvailBiz":0,"seatsAvailFirst":null,"revenueForecast":91600}
+]
