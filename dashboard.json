@@ -1,0 +1,27 @@
+{
+  "title": "El Al — Flight Operations",
+  "subtitle": "Flight Operations Centre",
+  "date": "Saturday, 21 June 2026",
+  "generatedAt": "2026-06-21T16:40:00Z",
+  "metrics": {
+    "totalFlights": 12,
+    "onTimePct": 42,
+    "onTimeCount": 5,
+    "delayed": 4,
+    "avgDelayMin": 40
+  },
+  "flights": [
+    { "flight": "LY001", "from": "TLV", "to": "JFK", "status": "On Time",  "gate": "B7", "dep": "08:30", "delayMin": 0,  "dest": "New York (JFK)" },
+    { "flight": "LY028", "from": "TLV", "to": "LHR", "status": "Delayed",  "gate": "C2", "dep": "09:15", "delayMin": 45, "dest": "London Heathrow" },
+    { "flight": "LY315", "from": "TLV", "to": "CDG", "status": "Boarding", "gate": "A4", "dep": "09:40", "delayMin": 0,  "dest": "Paris (CDG)" },
+    { "flight": "LY086", "from": "TLV", "to": "EWR", "status": "On Time",  "gate": "B3", "dep": "10:05", "delayMin": 0,  "dest": "New York (EWR)" },
+    { "flight": "LY394", "from": "TLV", "to": "FCO", "status": "Delayed",  "gate": "A9", "dep": "10:20", "delayMin": 20, "dest": "Rome (FCO)" },
+    { "flight": "LY007", "from": "TLV", "to": "LAX", "status": "On Time",  "gate": "D1", "dep": "10:55", "delayMin": 0,  "dest": "Los Angeles" },
+    { "flight": "LY052", "from": "TLV", "to": "FRA", "status": "Departed", "gate": "C5", "dep": "07:10", "delayMin": 0,  "dest": "Frankfurt" },
+    { "flight": "LY381", "from": "TLV", "to": "ATH", "status": "Boarding", "gate": "A2", "dep": "11:15", "delayMin": 0,  "dest": "Athens" },
+    { "flight": "LY015", "from": "TLV", "to": "BOS", "status": "Delayed",  "gate": "B8", "dep": "11:40", "delayMin": 35, "dest": "Boston" },
+    { "flight": "LY335", "from": "TLV", "to": "BCN", "status": "On Time",  "gate": "A7", "dep": "12:00", "delayMin": 0,  "dest": "Barcelona" },
+    { "flight": "LY563", "from": "TLV", "to": "AMS", "status": "On Time",  "gate": "C1", "dep": "12:25", "delayMin": 0,  "dest": "Amsterdam" },
+    { "flight": "LY071", "from": "TLV", "to": "MIA", "status": "Delayed",  "gate": "D3", "dep": "13:05", "delayMin": 60, "dest": "Miami" }
+  ]
+}
