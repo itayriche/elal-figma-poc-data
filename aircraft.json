@@ -1,0 +1,17 @@
+[
+  {"registration":"4X-EDA","type":"B787-9","capacity":297,"ageYears":4,"lastMaintenance":"2026-05-10","status":"active"},
+  {"registration":"4X-EHI","type":"B777-200ER","capacity":386,"ageYears":11,"lastMaintenance":"2026-04-22","status":"active"},
+  {"registration":"4X-EBB","type":"B737-900","capacity":189,"ageYears":8,"lastMaintenance":"2026-03-15","status":"active"},
+  {"registration":"4X-EDB","type":"B787-9","capacity":297,"ageYears":5,"lastMaintenance":"2026-05-28","status":"active"},
+  {"registration":"4X-EBC","type":"B737-900","capacity":189,"ageYears":9,"lastMaintenance":"2026-02-18","status":"active"},
+  {"registration":"4X-EDD","type":"B787-9","capacity":297,"ageYears":3,"lastMaintenance":"2026-06-01","status":"active"},
+  {"registration":"4X-EKE","type":"B737-MAX8","capacity":189,"ageYears":2,"lastMaintenance":"2026-05-05","status":"active"},
+  {"registration":"4X-EKF","type":"B737-MAX8","capacity":189,"ageYears":2,"lastMaintenance":"2026-04-30","status":"active"},
+  {"registration":"4X-EHK","type":"B777-200ER","capacity":386,"ageYears":10,"lastMaintenance":"2026-03-20","status":"active"},
+  {"registration":"4X-EBD","type":"B737-900","capacity":189,"ageYears":7,"lastMaintenance":"2026-04-08","status":"active"},
+  {"registration":"4X-EKG","type":"B737-MAX8","capacity":189,"ageYears":3,"lastMaintenance":"2026-05-15","status":"active"},
+  {"registration":"4X-EHJ","type":"B777-200ER","capacity":386,"ageYears":12,"lastMaintenance":"2026-02-28","status":"active"},
+  {"registration":"4X-EDE","type":"B787-8","capacity":246,"ageYears":6,"lastMaintenance":"2026-04-15","status":"active"},
+  {"registration":"4X-EBE","type":"B737-900","capacity":189,"ageYears":8,"lastMaintenance":"2026-05-22","status":"active"},
+  {"registration":"4X-EKH","type":"B737-MAX8","capacity":189,"ageYears":1,"lastMaintenance":"2026-06-10","status":"active"}
+]
