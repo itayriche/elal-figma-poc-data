@@ -1,0 +1,17 @@
+[
+  {"flightId":"LY297","timestamp":"2026-06-21T03:30:00Z","fromStatus":"Scheduled","toStatus":"On Time","reason":"Check-in opened","updatedBy":"system"},
+  {"flightId":"LY297","timestamp":"2026-06-21T06:45:00Z","fromStatus":"Boarding","toStatus":"Departed","reason":"Airborne","updatedBy":"system"},
+  {"flightId":"LY052","timestamp":"2026-06-21T04:30:00Z","fromStatus":"Scheduled","toStatus":"On Time","reason":"Check-in opened","updatedBy":"system"},
+  {"flightId":"LY052","timestamp":"2026-06-21T07:10:00Z","fromStatus":"Boarding","toStatus":"Departed","reason":"Airborne","updatedBy":"system"},
+  {"flightId":"LY028","timestamp":"2026-06-21T05:30:00Z","fromStatus":"Scheduled","toStatus":"On Time","reason":"Check-in opened","updatedBy":"system"},
+  {"flightId":"LY028","timestamp":"2026-06-21T06:12:00Z","fromStatus":"On Time","toStatus":"Delayed","reason":"ATC hold — London TMA congestion","updatedBy":"ops-controller-02"},
+  {"flightId":"LY394","timestamp":"2026-06-21T05:45:00Z","fromStatus":"Scheduled","toStatus":"On Time","reason":"Check-in opened","updatedBy":"system"},
+  {"flightId":"LY394","timestamp":"2026-06-21T07:20:00Z","fromStatus":"On Time","toStatus":"Delayed","reason":"Late aircraft inbound from GVA","updatedBy":"ops-controller-01"},
+  {"flightId":"LY315","timestamp":"2026-06-21T07:00:00Z","fromStatus":"Scheduled","toStatus":"On Time","reason":"Check-in opened","updatedBy":"system"},
+  {"flightId":"LY315","timestamp":"2026-06-21T09:25:00Z","fromStatus":"On Time","toStatus":"Boarding","reason":"Gate open","updatedBy":"system"},
+  {"flightId":"LY015","timestamp":"2026-06-21T06:00:00Z","fromStatus":"Scheduled","toStatus":"On Time","reason":"Check-in opened","updatedBy":"system"},
+  {"flightId":"LY015","timestamp":"2026-06-21T08:45:00Z","fromStatus":"On Time","toStatus":"Delayed","reason":"Crew availability — connecting crew delayed on LY092","updatedBy":"ops-controller-03"},
+  {"flightId":"LY071","timestamp":"2026-06-21T07:00:00Z","fromStatus":"Scheduled","toStatus":"On Time","reason":"Check-in opened","updatedBy":"system"},
+  {"flightId":"LY071","timestamp":"2026-06-21T09:05:00Z","fromStatus":"On Time","toStatus":"Delayed","reason":"Crew standby — connecting crew delayed","updatedBy":"ops-controller-02"},
+  {"flightId":"LY071","timestamp":"2026-06-21T10:30:00Z","fromStatus":"Delayed","toStatus":"Delayed","reason":"Delay extended — crew ETA revised to 14:05","updatedBy":"ops-controller-02"}
+]
