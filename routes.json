@@ -1,0 +1,17 @@
+[
+  {"routeId":"TLV-JFK","distanceKm":9130,"flightDurationMin":660,"region":"North America","frequencyPerWeek":14,"avgLoadFactor":88},
+  {"routeId":"TLV-LHR","distanceKm":3580,"flightDurationMin":255,"region":"Europe","frequencyPerWeek":21,"avgLoadFactor":91},
+  {"routeId":"TLV-CDG","distanceKm":3310,"flightDurationMin":210,"region":"Europe","frequencyPerWeek":14,"avgLoadFactor":84},
+  {"routeId":"TLV-EWR","distanceKm":9270,"flightDurationMin":675,"region":"North America","frequencyPerWeek":7,"avgLoadFactor":85},
+  {"routeId":"TLV-FCO","distanceKm":2320,"flightDurationMin":150,"region":"Europe","frequencyPerWeek":14,"avgLoadFactor":82},
+  {"routeId":"TLV-LAX","distanceKm":12090,"flightDurationMin":735,"region":"North America","frequencyPerWeek":7,"avgLoadFactor":89},
+  {"routeId":"TLV-FRA","distanceKm":3110,"flightDurationMin":190,"region":"Europe","frequencyPerWeek":21,"avgLoadFactor":86},
+  {"routeId":"TLV-ATH","distanceKm":1390,"flightDurationMin":120,"region":"Europe","frequencyPerWeek":14,"avgLoadFactor":78},
+  {"routeId":"TLV-BOS","distanceKm":9080,"flightDurationMin":660,"region":"North America","frequencyPerWeek":7,"avgLoadFactor":87},
+  {"routeId":"TLV-BCN","distanceKm":3290,"flightDurationMin":205,"region":"Europe","frequencyPerWeek":7,"avgLoadFactor":80},
+  {"routeId":"TLV-AMS","distanceKm":3410,"flightDurationMin":215,"region":"Europe","frequencyPerWeek":14,"avgLoadFactor":83},
+  {"routeId":"TLV-MIA","distanceKm":10410,"flightDurationMin":750,"region":"North America","frequencyPerWeek":7,"avgLoadFactor":86},
+  {"routeId":"TLV-SIN","distanceKm":8680,"flightDurationMin":570,"region":"Asia Pacific","frequencyPerWeek":7,"avgLoadFactor":84},
+  {"routeId":"TLV-DXB","distanceKm":2300,"flightDurationMin":210,"region":"Middle East","frequencyPerWeek":21,"avgLoadFactor":90},
+  {"routeId":"TLV-DUS","distanceKm":3330,"flightDurationMin":205,"region":"Europe","frequencyPerWeek":7,"avgLoadFactor":79}
+]
