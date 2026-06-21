@@ -1,27 +1,104 @@
 {
-  "title": "El Al — Flight Operations",
+  "title": "El Al â€” Flight Operations",
   "subtitle": "Flight Operations Centre",
   "date": "Saturday, 21 June 2026",
-  "generatedAt": "2026-06-21T16:40:00Z",
+  "generatedAt": "2026-06-21T09:41:00Z",
+  "userPrompt": "Show me the revenue impact of today's delays",
   "metrics": {
-    "totalFlights": 12,
-    "onTimePct": 42,
-    "onTimeCount": 5,
-    "delayed": 4,
-    "avgDelayMin": 40
+    "totalFlights": 15, "onTimePct": 47, "onTimeCount": 7,
+    "delayed": 4, "boarding": 2, "departed": 2, "avgDelayMin": 40,
+    "totalPaxAffected": 1092, "totalRevenueForecast": 2108200, "delayedRevenue": 681400
   },
   "flights": [
-    { "flight": "LY001", "from": "TLV", "to": "JFK", "status": "On Time",  "gate": "B7", "dep": "08:30", "delayMin": 0,  "dest": "New York (JFK)" },
-    { "flight": "LY028", "from": "TLV", "to": "LHR", "status": "Delayed",  "gate": "C2", "dep": "09:15", "delayMin": 45, "dest": "London Heathrow" },
-    { "flight": "LY315", "from": "TLV", "to": "CDG", "status": "Boarding", "gate": "A4", "dep": "09:40", "delayMin": 0,  "dest": "Paris (CDG)" },
-    { "flight": "LY086", "from": "TLV", "to": "EWR", "status": "On Time",  "gate": "B3", "dep": "10:05", "delayMin": 0,  "dest": "New York (EWR)" },
-    { "flight": "LY394", "from": "TLV", "to": "FCO", "status": "Delayed",  "gate": "A9", "dep": "10:20", "delayMin": 20, "dest": "Rome (FCO)" },
-    { "flight": "LY007", "from": "TLV", "to": "LAX", "status": "On Time",  "gate": "D1", "dep": "10:55", "delayMin": 0,  "dest": "Los Angeles" },
-    { "flight": "LY052", "from": "TLV", "to": "FRA", "status": "Departed", "gate": "C5", "dep": "07:10", "delayMin": 0,  "dest": "Frankfurt" },
-    { "flight": "LY381", "from": "TLV", "to": "ATH", "status": "Boarding", "gate": "A2", "dep": "11:15", "delayMin": 0,  "dest": "Athens" },
-    { "flight": "LY015", "from": "TLV", "to": "BOS", "status": "Delayed",  "gate": "B8", "dep": "11:40", "delayMin": 35, "dest": "Boston" },
-    { "flight": "LY335", "from": "TLV", "to": "BCN", "status": "On Time",  "gate": "A7", "dep": "12:00", "delayMin": 0,  "dest": "Barcelona" },
-    { "flight": "LY563", "from": "TLV", "to": "AMS", "status": "On Time",  "gate": "C1", "dep": "12:25", "delayMin": 0,  "dest": "Amsterdam" },
-    { "flight": "LY071", "from": "TLV", "to": "MIA", "status": "Delayed",  "gate": "D3", "dep": "13:05", "delayMin": 60, "dest": "Miami" }
+    {"flightId":"LY001","from":"TLV","to":"JFK","dest":"New York (JFK)","destRegion":"North America","dep":"08:30","arr":"14:45","status":"On Time","gate":"B7","terminal":"T3","delayMin":0,"delayReason":null,"aircraftReg":"4X-EDA","type":"B787-9","paxBooked":280,"paxCheckedIn":261,"revenueForecast":187400},
+    {"flightId":"LY028","from":"TLV","to":"LHR","dest":"London Heathrow","destRegion":"Europe","dep":"09:15","arr":"13:30","status":"Delayed","gate":"C2","terminal":"T1","delayMin":45,"delayReason":"ATC hold â€” London TMA congestion","aircraftReg":"4X-EHI","type":"B777-200ER","paxBooked":350,"paxCheckedIn":312,"revenueForecast":198600},
+    {"flightId":"LY315","from":"TLV","to":"CDG","dest":"Paris (CDG)","destRegion":"Europe","dep":"09:40","arr":"13:10","status":"Boarding","gate":"A4","terminal":"T1","delayMin":0,"delayReason":null,"aircraftReg":"4X-EBB","type":"B737-900","paxBooked":189,"paxCheckedIn":184,"revenueForecast":89400},
+    {"flightId":"LY086","from":"TLV","to":"EWR","dest":"New York (EWR)","destRegion":"North America","dep":"10:05","arr":"16:20","status":"On Time","gate":"B3","terminal":"T3","delayMin":0,"delayReason":null,"aircraftReg":"4X-EDB","type":"B787-9","paxBooked":280,"paxCheckedIn":255,"revenueForecast":192000},
+    {"flightId":"LY394","from":"TLV","to":"FCO","dest":"Rome (FCO)","destRegion":"Europe","dep":"10:20","arr":"12:50","status":"Delayed","gate":"A9","terminal":"T1","delayMin":20,"delayReason":"Late aircraft inbound from GVA","aircraftReg":"4X-EBC","type":"B737-900","paxBooked":189,"paxCheckedIn":170,"revenueForecast":72400},
+    {"flightId":"LY007","from":"TLV","to":"LAX","dest":"Los Angeles","destRegion":"North America","dep":"10:55","arr":"22:10","status":"On Time","gate":"D1","terminal":"T3","delayMin":0,"delayReason":null,"aircraftReg":"4X-EDD","type":"B787-9","paxBooked":297,"paxCheckedIn":289,"revenueForecast":248600},
+    {"flightId":"LY052","from":"TLV","to":"FRA","dest":"Frankfurt","destRegion":"Europe","dep":"07:10","arr":"10:20","status":"Departed","gate":"C5","terminal":"T1","delayMin":0,"delayReason":null,"aircraftReg":"4X-EKE","type":"B737-MAX8","paxBooked":189,"paxCheckedIn":182,"revenueForecast":95200},
+    {"flightId":"LY381","from":"TLV","to":"ATH","dest":"Athens","destRegion":"Europe","dep":"11:15","arr":"13:15","status":"Boarding","gate":"A2","terminal":"T1","delayMin":0,"delayReason":null,"aircraftReg":"4X-EKF","type":"B737-MAX8","paxBooked":189,"paxCheckedIn":179,"revenueForecast":52400},
+    {"flightId":"LY015","from":"TLV","to":"BOS","dest":"Boston","destRegion":"North America","dep":"11:40","arr":"18:10","status":"Delayed","gate":"B8","terminal":"T3","delayMin":35,"delayReason":"Crew availability","aircraftReg":"4X-EHK","type":"B777-200ER","paxBooked":350,"paxCheckedIn":298,"revenueForecast":182000},
+    {"flightId":"LY335","from":"TLV","to":"BCN","dest":"Barcelona","destRegion":"Europe","dep":"12:00","arr":"15:30","status":"On Time","gate":"A7","terminal":"T1","delayMin":0,"delayReason":null,"aircraftReg":"4X-EBD","type":"B737-900","paxBooked":189,"paxCheckedIn":175,"revenueForecast":76800},
+    {"flightId":"LY563","from":"TLV","to":"AMS","dest":"Amsterdam","destRegion":"Europe","dep":"12:25","arr":"15:40","status":"On Time","gate":"C1","terminal":"T1","delayMin":0,"delayReason":null,"aircraftReg":"4X-EKG","type":"B737-MAX8","paxBooked":189,"paxCheckedIn":168,"revenueForecast":74200},
+    {"flightId":"LY071","from":"TLV","to":"MIA","dest":"Miami","destRegion":"North America","dep":"13:05","arr":"20:30","status":"Delayed","gate":"D3","terminal":"T3","delayMin":60,"delayReason":"Crew standby","aircraftReg":"4X-EHJ","type":"B777-200ER","paxBooked":350,"paxCheckedIn":312,"revenueForecast":228400},
+    {"flightId":"LY212","from":"TLV","to":"SIN","dest":"Singapore (Changi)","destRegion":"Asia Pacific","dep":"14:00","arr":"05:30+1","status":"On Time","gate":"D5","terminal":"T3","delayMin":0,"delayReason":null,"aircraftReg":"4X-EDE","type":"B787-8","paxBooked":246,"paxCheckedIn":228,"revenueForecast":256800},
+    {"flightId":"LY418","from":"TLV","to":"DXB","dest":"Dubai (DXB)","destRegion":"Middle East","dep":"15:30","arr":"19:00","status":"On Time","gate":"B5","terminal":"T3","delayMin":0,"delayReason":null,"aircraftReg":"4X-EBE","type":"B737-900","paxBooked":189,"paxCheckedIn":180,"revenueForecast":62400},
+    {"flightId":"LY297","from":"TLV","to":"DUS","dest":"DÃ¼sseldorf","destRegion":"Europe","dep":"06:45","arr":"10:05","status":"Departed","gate":"C8","terminal":"T1","delayMin":0,"delayReason":null,"aircraftReg":"4X-EKH","type":"B737-MAX8","paxBooked":189,"paxCheckedIn":185,"revenueForecast":91600}
+  ],
+  "alerts": [
+    {"flightId":"LY071","severity":"high","message":"LY071 MIA +60min â€” crew standby, 312 pax affected","revenueAtRisk":228400},
+    {"flightId":"LY028","severity":"high","message":"LY028 LHR +45min â€” ATC hold London TMA, 312 pax affected","revenueAtRisk":198600},
+    {"flightId":"LY015","severity":"medium","message":"LY015 BOS +35min â€” crew availability, 298 pax affected","revenueAtRisk":182000},
+    {"flightId":"LY394","severity":"medium","message":"LY394 FCO +20min â€” late inbound aircraft, 170 pax affected","revenueAtRisk":72400}
+  ],
+  "timeline": [
+    {"flightId":"LY297","dep":"06:45","status":"Departed"},
+    {"flightId":"LY052","dep":"07:10","status":"Departed"},
+    {"flightId":"LY001","dep":"08:30","status":"On Time"},
+    {"flightId":"LY028","dep":"09:15","status":"Delayed"},
+    {"flightId":"LY315","dep":"09:40","status":"Boarding"},
+    {"flightId":"LY086","dep":"10:05","status":"On Time"},
+    {"flightId":"LY394","dep":"10:20","status":"Delayed"},
+    {"flightId":"LY007","dep":"10:55","status":"On Time"},
+    {"flightId":"LY381","dep":"11:15","status":"Boarding"},
+    {"flightId":"LY015","dep":"11:40","status":"Delayed"},
+    {"flightId":"LY335","dep":"12:00","status":"On Time"},
+    {"flightId":"LY563","dep":"12:25","status":"On Time"},
+    {"flightId":"LY071","dep":"13:05","status":"Delayed"},
+    {"flightId":"LY212","dep":"14:00","status":"On Time"},
+    {"flightId":"LY418","dep":"15:30","status":"On Time"}
+  ],
+  "destinations": [
+    {"region":"Europe","count":8,"onTimeCount":3,"delayedCount":2,"totalRevenue":769600},
+    {"region":"North America","count":5,"onTimeCount":2,"delayedCount":3,"totalRevenue":1038400},
+    {"region":"Asia Pacific","count":1,"onTimeCount":1,"delayedCount":0,"totalRevenue":256800},
+    {"region":"Middle East","count":1,"onTimeCount":1,"delayedCount":0,"totalRevenue":62400}
+  ],
+  "revenue": {
+    "totalForecast": 2108200,
+    "byRegion": [
+      {"region":"North America","forecast":1038400,"delayedAmount":608400},
+      {"region":"Europe","forecast":750600,"delayedAmount":271000},
+      {"region":"Asia Pacific","forecast":256800,"delayedAmount":0},
+      {"region":"Middle East","forecast":62400,"delayedAmount":0}
+    ],
+    "topFlightByRevenue": "LY212"
+  },
+  "weather": [
+    {"airport":"JFK","condition":"Clear","tempC":22,"windKph":18,"visibility":"10km","delayRisk":"low"},
+    {"airport":"LHR","condition":"Overcast","tempC":14,"windKph":32,"visibility":"8km","delayRisk":"medium"},
+    {"airport":"CDG","condition":"Partly Cloudy","tempC":18,"windKph":15,"visibility":"10km","delayRisk":"low"},
+    {"airport":"EWR","condition":"Clear","tempC":23,"windKph":12,"visibility":"10km","delayRisk":"low"},
+    {"airport":"FCO","condition":"Sunny","tempC":28,"windKph":8,"visibility":"10km","delayRisk":"low"},
+    {"airport":"LAX","condition":"Morning Fog","tempC":19,"windKph":10,"visibility":"3km","delayRisk":"medium"},
+    {"airport":"FRA","condition":"Cloudy","tempC":16,"windKph":22,"visibility":"9km","delayRisk":"low"},
+    {"airport":"ATH","condition":"Sunny","tempC":32,"windKph":14,"visibility":"10km","delayRisk":"low"},
+    {"airport":"BOS","condition":"Thunderstorm","tempC":21,"windKph":45,"visibility":"2km","delayRisk":"high"},
+    {"airport":"BCN","condition":"Sunny","tempC":26,"windKph":11,"visibility":"10km","delayRisk":"low"},
+    {"airport":"AMS","condition":"Rainy","tempC":13,"windKph":28,"visibility":"6km","delayRisk":"medium"},
+    {"airport":"MIA","condition":"Partly Cloudy","tempC":30,"windKph":20,"visibility":"10km","delayRisk":"low"},
+    {"airport":"SIN","condition":"Tropical Shower","tempC":29,"windKph":18,"visibility":"7km","delayRisk":"low"},
+    {"airport":"DXB","condition":"Sunny","tempC":38,"windKph":15,"visibility":"10km","delayRisk":"low"},
+    {"airport":"DUS","condition":"Cloudy","tempC":15,"windKph":20,"visibility":"8km","delayRisk":"low"}
+  ],
+  "history": [
+    {"flightId":"LY028","events":[
+      {"timestamp":"2026-06-21T05:30:00Z","fromStatus":"Scheduled","toStatus":"On Time","reason":"Check-in opened","updatedBy":"system"},
+      {"timestamp":"2026-06-21T06:12:00Z","fromStatus":"On Time","toStatus":"Delayed","reason":"ATC hold â€” London TMA congestion","updatedBy":"ops-controller-02"}
+    ]},
+    {"flightId":"LY071","events":[
+      {"timestamp":"2026-06-21T07:00:00Z","fromStatus":"Scheduled","toStatus":"On Time","reason":"Check-in opened","updatedBy":"system"},
+      {"timestamp":"2026-06-21T09:05:00Z","fromStatus":"On Time","toStatus":"Delayed","reason":"Crew standby â€” connecting crew delayed","updatedBy":"ops-controller-02"},
+      {"timestamp":"2026-06-21T10:30:00Z","fromStatus":"Delayed","toStatus":"Delayed","reason":"Delay extended â€” crew ETA revised to 14:05","updatedBy":"ops-controller-02"}
+    ]},
+    {"flightId":"LY015","events":[
+      {"timestamp":"2026-06-21T06:00:00Z","fromStatus":"Scheduled","toStatus":"On Time","reason":"Check-in opened","updatedBy":"system"},
+      {"timestamp":"2026-06-21T08:45:00Z","fromStatus":"On Time","toStatus":"Delayed","reason":"Crew availability â€” connecting crew delayed on LY092","updatedBy":"ops-controller-03"}
+    ]},
+    {"flightId":"LY394","events":[
+      {"timestamp":"2026-06-21T05:45:00Z","fromStatus":"Scheduled","toStatus":"On Time","reason":"Check-in opened","updatedBy":"system"},
+      {"timestamp":"2026-06-21T07:20:00Z","fromStatus":"On Time","toStatus":"Delayed","reason":"Late aircraft inbound from GVA","updatedBy":"ops-controller-01"}
+    ]}
   ]
 }
