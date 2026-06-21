@@ -1,0 +1,17 @@
+[
+  {"airport":"JFK","condition":"Clear","tempC":22,"windKph":18,"visibility":"10km","delayRisk":"low"},
+  {"airport":"LHR","condition":"Overcast","tempC":14,"windKph":32,"visibility":"8km","delayRisk":"medium"},
+  {"airport":"CDG","condition":"Partly Cloudy","tempC":18,"windKph":15,"visibility":"10km","delayRisk":"low"},
+  {"airport":"EWR","condition":"Clear","tempC":23,"windKph":12,"visibility":"10km","delayRisk":"low"},
+  {"airport":"FCO","condition":"Sunny","tempC":28,"windKph":8,"visibility":"10km","delayRisk":"low"},
+  {"airport":"LAX","condition":"Morning Fog","tempC":19,"windKph":10,"visibility":"3km","delayRisk":"medium"},
+  {"airport":"FRA","condition":"Cloudy","tempC":16,"windKph":22,"visibility":"9km","delayRisk":"low"},
+  {"airport":"ATH","condition":"Sunny","tempC":32,"windKph":14,"visibility":"10km","delayRisk":"low"},
+  {"airport":"BOS","condition":"Thunderstorm","tempC":21,"windKph":45,"visibility":"2km","delayRisk":"high"},
+  {"airport":"BCN","condition":"Sunny","tempC":26,"windKph":11,"visibility":"10km","delayRisk":"low"},
+  {"airport":"AMS","condition":"Rainy","tempC":13,"windKph":28,"visibility":"6km","delayRisk":"medium"},
+  {"airport":"MIA","condition":"Partly Cloudy","tempC":30,"windKph":20,"visibility":"10km","delayRisk":"low"},
+  {"airport":"SIN","condition":"Tropical Shower","tempC":29,"windKph":18,"visibility":"7km","delayRisk":"low"},
+  {"airport":"DXB","condition":"Sunny","tempC":38,"windKph":15,"visibility":"10km","delayRisk":"low"},
+  {"airport":"DUS","condition":"Cloudy","tempC":15,"windKph":20,"visibility":"8km","delayRisk":"low"}
+]
