@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Al Flight Operations Dashboard</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  body { background: #F4F6F8; color: #1a1a2e; }
+
+  header { background: #003C71; color: white; padding: 20px 32px; display: flex; justify-content: space-between; align-items: center; }
+  header h1 { font-size: 22px; font-weight: 700; letter-spacing: 0.5px; }
+  header .subtitle { font-size: 13px; opacity: 0.8; margin-top: 3px; }
+  header .meta { text-align: right; font-size: 13px; opacity: 0.8; }
+
+  main { max-width: 1400px; margin: 0 auto; padding: 24px 32px; }
+
+  .kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+  .kpi-card { background: white; border-radius: 10px; padding: 20px 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); border-top: 4px solid #0072CE; }
+  .kpi-card .value { font-size: 36px; font-weight: 800; color: #003C71; }
+  .kpi-card .label { font-size: 13px; color: #6B7280; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .kpi-card.delayed { border-top-color: #F59E0B; }
+  .kpi-card.delayed .value { color: #D97706; }
+
+  section { background: white; border-radius: 10px; padding: 20px 24px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+  section h2 { font-size: 15px; font-weight: 700; color: #003C71; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 2px solid #F4F6F8; padding-bottom: 10px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th { background: #F4F6F8; text-align: left; padding: 10px 12px; font-size: 12px; color: #6B7280; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; }
+  td { padding: 10px 12px; border-bottom: 1px solid #F4F6F8; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #FAFBFC; }
+
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+  .badge-on-time { background: #DCFCE7; color: #166534; }
+  .badge-delayed { background: #FEF3C7; color: #92400E; }
+  .badge-boarding { background: #DBEAFE; color: #1E40AF; }
+  .badge-departed { background: #F3F4F6; color: #374151; }
+  .badge-high { background: #FEE2E2; color: #991B1B; }
+  .badge-medium { background: #FEF3C7; color: #92400E; }
+  .badge-low { background: #FEF9C3; color: #713F12; }
+
+  .revenue { font-family: monospace; color: #374151; }
+  .delay-value { color: #D97706; font-weight: 600; }
+
+  footer { text-align: center; padding: 24px; font-size: 12px; color: #9CA3AF; }
+
+  #loading { text-align: center; padding: 60px; color: #6B7280; font-size: 16px; }
+  #error { display: none; text-align: center; padding: 40px; color: #DC2626; }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1 id="header-title">El Al Flight Operations</h1>
+    <div class="subtitle" id="header-subtitle">Flight Operations Centre</div>
+  </div>
+  <div class="meta">
+    <div id="header-date">Loading...</div>
+    <div id="header-generated" style="font-size:11px; margin-top:3px;"></div>
+  </div>
+</header>
+
+<main>
+  <div id="loading">Loading dashboard data...</div>
+  <div id="error">Failed to load dashboard data. Please try again.</div>
+
+  <div id="dashboard" style="display:none">
+
+    <div class="kpi-row">
+      <div class="kpi-card">
+        <div class="value" id="kpi-total">—</div>
+        <div class="label">Total Flights</div>
+      </div>
+      <div class="kpi-card">
+        <div class="value" id="kpi-ontime">—</div>
+        <div class="label">On Time</div>
+      </div>
+      <div class="kpi-card delayed">
+        <div class="value" id="kpi-delayed">—</div>
+        <div class="label">Delayed</div>
+      </div>
+      <div class="kpi-card delayed">
+        <div class="value" id="kpi-avgdelay">—</div>
+        <div class="label">Avg Delay</div>
+      </div>
+    </div>
+
+    <section>
+      <h2>Active Alerts</h2>
+      <table>
+        <thead>
+          <tr><th>Flight</th><th>Severity</th><th>Message</th><th>Revenue at Risk</th></tr>
+        </thead>
+        <tbody id="alerts-body"></tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Flight Status</h2>
+      <table>
+        <thead>
+          <tr><th>Flight</th><th>Route</th><th>Status</th><th>Gate</th><th>Departure</th><th>Delay</th><th>Revenue</th></tr>
+        </thead>
+        <tbody id="flights-body"></tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Destinations by Region</h2>
+      <table>
+        <thead>
+          <tr><th>Region</th><th>Total Flights</th><th>On Time</th><th>Delayed</th><th>Total Revenue</th></tr>
+        </thead>
+        <tbody id="destinations-body"></tbody>
+      </table>
+    </section>
+
+  </div>
+</main>
+
+<footer>Generated by CodeMie AI &bull; El Al Operations Centre</footer>
+
+<script>
+function fmt(n) {
+  if (n == null) return '—';
+  return '$' + Number(n).toLocaleString();
+}
+
+function statusBadge(s) {
+  if (!s) return '<span class="badge badge-departed">Unknown</span>';
+  const l = s.toLowerCase();
+  if (l.includes('on time') || l === 'on_time') return '<span class="badge badge-on-time">On Time</span>';
+  if (l.includes('delay')) return '<span class="badge badge-delayed">Delayed</span>';
+  if (l.includes('board')) return '<span class="badge badge-boarding">Boarding</span>';
+  if (l.includes('depart')) return '<span class="badge badge-departed">Departed</span>';
+  return `<span class="badge badge-departed">${s}</span>`;
+}
+
+function severityBadge(s) {
+  const cls = s === 'high' ? 'badge-high' : s === 'medium' ? 'badge-medium' : 'badge-low';
+  return `<span class="badge ${cls}">${s.toUpperCase()}</span>`;
+}
+
+fetch('./dashboard.json?t=' + Date.now())
+  .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+  .then(d => {
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('dashboard').style.display = 'block';
+
+    document.getElementById('header-title').textContent = d.title || 'El Al Flight Operations';
+    document.getElementById('header-date').textContent = d.date || '';
+    document.getElementById('header-generated').textContent = d.generatedAt ? 'Updated: ' + d.generatedAt : '';
+
+    const m = d.metrics || {};
+    document.getElementById('kpi-total').textContent = m.totalFlights ?? '—';
+    document.getElementById('kpi-ontime').textContent = m.onTimePct != null ? m.onTimePct + '%' : '—';
+    document.getElementById('kpi-delayed').textContent = m.delayed ?? '—';
+    document.getElementById('kpi-avgdelay').textContent = m.avgDelayMin != null ? m.avgDelayMin + ' min' : '—';
+
+    const alertsBody = document.getElementById('alerts-body');
+    (d.alerts || []).forEach(a => {
+      alertsBody.innerHTML += `<tr>
+        <td><strong>${a.flightId || '—'}</strong></td>
+        <td>${severityBadge(a.severity || 'low')}</td>
+        <td>${a.message || '—'}</td>
+        <td class="revenue">${fmt(a.revenueAtRisk)}</td>
+      </tr>`;
+    });
+    if (!d.alerts || d.alerts.length === 0) alertsBody.innerHTML = '<tr><td colspan="4" style="color:#6B7280;text-align:center">No active alerts</td></tr>';
+
+    const flightsBody = document.getElementById('flights-body');
+    (d.flights || []).forEach(f => {
+      const delay = f.delayMin > 0 ? `<span class="delay-value">${f.delayMin} min</span>` : '—';
+      flightsBody.innerHTML += `<tr>
+        <td><strong>${f.flightId || '—'}</strong></td>
+        <td>${f.from || 'TLV'} → ${f.to || '—'}</td>
+        <td>${statusBadge(f.status)}</td>
+        <td>${f.gate || '—'}</td>
+        <td>${f.dep || '—'}</td>
+        <td>${delay}</td>
+        <td class="revenue">${fmt(f.revenueForecast)}</td>
+      </tr>`;
+    });
+
+    const destBody = document.getElementById('destinations-body');
+    (d.destinations || []).forEach(dest => {
+      destBody.innerHTML += `<tr>
+        <td>${dest.region || '—'}</td>
+        <td>${dest.count ?? '—'}</td>
+        <td style="color:#166534;font-weight:600">${dest.onTimeCount ?? '—'}</td>
+        <td style="color:#D97706;font-weight:600">${dest.delayedCount ?? '—'}</td>
+        <td class="revenue">${fmt(dest.totalRevenue)}</td>
+      </tr>`;
+    });
+  })
+  .catch(err => {
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('error').style.display = 'block';
+    document.getElementById('error').textContent = 'Could not load dashboard.json: ' + err.message;
+    console.error(err);
+  });
+</script>
+</body>
+</html>
